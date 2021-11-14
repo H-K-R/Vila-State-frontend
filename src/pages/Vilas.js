@@ -8,7 +8,7 @@ const Vilas = () => {
   useEffect(() => {
     axios
       .get("https://boiling-plains-50382.herokuapp.com/vilas")
-      .then((res) => setVilas(res.data.slice(0, 6)));
+      .then((res) => setVilas(res.data));
   }, []);
 
   return (
